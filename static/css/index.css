@@ -133,5 +133,17 @@ body {
   font-size: smaller;
 }
 
+/* Video Styling */
+.video-center {
+  max-width: 100%;  /* Adjust width for responsiveness */
+  height: auto;    /* Maintain aspect ratio */
+  display: block;  /* Ensure proper centering */
+}
 
-
+/* Carousel Items Centering */
+/* .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+} */

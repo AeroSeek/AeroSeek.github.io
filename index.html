@@ -109,7 +109,7 @@
                     <span class="icon">
                       <i class="fab fa-github"></i>
                     </span>
-                    <span>Code</span>
+                    <span>Code(Coming soon)</span>
                   </a>
                 </span>
 
@@ -162,64 +162,113 @@
   <!-- End teaser video -->
 
   <!-- Paper abstract -->
-  <!-- <section class="section hero is-light">
+  <section class="section hero is-light">
     <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus.
-              Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a
-              vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac
-              gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed
-              vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+              Though Unmanned Aerial Vehicles (UAVs) hold immense potential for transforming the Low-Altitude Economy, 
+              developing an agent that combines both intelligence and flexibility remains a significant challenge. 
+              To this end, we propose a novel aerial navigation system, AeroSeek, to search executable paths that coherent transition from cognitive understanding to physical movement, 
+              enabling more autonomous, flexible navigation with instruction guidance. Specifically, given a navigation instruction, 
+              we follow a fast-slow thinking procedure of the drone pilot by breaking down complex decisions into manageable sub-tasks and initiating motion planning immediately upon completion of each sub-task for real-time movement. 
+              By integrating multi-Chain-of-Thought, AeroSeek is capable of reasoning along with spatial recognition and self-verification to search for robust sub-goals in terms of expected constraints. 
+              For sub-goal navigation, we introduce OnKi-RRT, the brand-new motion planner approach featuring both kinodynamic constraints and asymptotic optimality, while ensuring dynamic obstacle avoidance for UAVs. 
+              Benefiting from the proposed two-tier searching protocol, AeroSeek performs advanced comprehensive capabilities of complicated instruction and adapts to dynamic aerial conditions. 
+              Extended experiments demonstrate the advantages of AeroSeek across tasks of varying complexity.
             </p>
           </div>
         </div>
       </div>
     </div>
-  </section> -->
+  </section>
   <!-- End paper abstract -->
 
 
+  <!-- Video carousel -->
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns is-centered has-text-centered">
+          <h2 class="title is-3">Experiments</h2>
+        </div>
+        
+        <!-- Video Carousel -->
+        <div id="results-carousel" class="carousel results-carousel">
+          <!-- Video 1 -->
+          <div class="item item-video3 is-flex is-justify-content-center is-align-items-center">
+            <video poster="" id="video3" autoplay controls muted loop class="video-center">
+              <source src="static/videos/IROS_video.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <!-- Video 2 -->
+          <div class="item item-video1 is-flex is-justify-content-center is-align-items-center">
+            <video poster="" id="video1" autoplay controls muted loop class="video-center">
+              <source src="static/videos/5_meters.mp4" type="video/mp4">
+            </video>
+          </div>
+  
+          <!-- Video 3 -->
+          <div class="item item-video2 is-flex is-justify-content-center is-align-items-center">
+            <video poster="" id="video2" autoplay controls muted loop class="video-center">
+              <source src="static/videos/move_to_left.mp4" type="video/mp4">
+            </video>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End video carousel -->
+
+
   <!-- Image carousel -->
-  <!-- <section class="hero is-small">
+  <section class="hero is-small">
     <div class="hero-body">
       <div class="container">
         <div id="results-carousel" class="carousel results-carousel">
           <div class="item">
 
-            <img src="static/images/carousel1.jpg" alt="MY ALT TEXT" />
+            <img src="static/images/1.jpg" alt="MY ALT TEXT" />
             <h2 class="subtitle has-text-centered">
-              First image description.
+              Trajectory comparison between OnKi-RRT (cyan) and Native A* (red).
             </h2>
           </div>
           <div class="item">
 
-            <img src="static/images/carousel2.jpg" alt="MY ALT TEXT" />
+            <img src="static/images/2.jpg" alt="MY ALT TEXT" />
             <h2 class="subtitle has-text-centered">
-              Second image description.
+              Trajectory comparison between OnKi-RRT (cyan) and Native A* (red).
             </h2>
           </div>
           <div class="item">
 
-            <img src="static/images/carousel3.jpg" alt="MY ALT TEXT" />
+            <img src="static/images/3.jpg" alt="MY ALT TEXT" />
             <h2 class="subtitle has-text-centered">
-              Third image description.
+              Trajectory comparison between OnKi-RRT (cyan) and Native A* (red).
             </h2>
           </div>
           <div class="item">
  
-            <img src="static/images/carousel4.jpg" alt="MY ALT TEXT" />
+            <img src="static/images/4.jpg" alt="MY ALT TEXT" />
             <h2 class="subtitle has-text-centered">
-              Fourth image description.
+              Trajectory comparison between OnKi-RRT (cyan) and Native A* (red).
+            </h2>
+          </div>
+          <div class="item">
+ 
+            <img src="static/images/5.jpg" alt="MY ALT TEXT" />
+            <h2 class="subtitle has-text-centered">
+              Trajectory comparison between OnKi-RRT (cyan) and Native A* (red).
             </h2>
           </div>
         </div>
       </div>
     </div>
-  </section> -->
+  </section>
   <!-- End image carousel -->
 
 
@@ -243,40 +292,6 @@
     </div>
   </section> -->
   <!-- End youtube video -->
-
-
-  <!-- Video carousel -->
-  <!-- <section class="hero is-small">
-    <div class="hero-body">
-      <div class="container">
-        <h2 class="title is-3">Another Carousel</h2>
-        <div id="results-carousel" class="carousel results-carousel">
-          <div class="item item-video1">
-            <video poster="" id="video1" autoplay controls muted loop height="100%">
-
-              <source src="static/videos/carousel1.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-video2">
-            <video poster="" id="video2" autoplay controls muted loop height="100%">
-
-              <source src="static/videos/carousel2.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-video3">
-            <video poster="" id="video3" autoplay controls muted loop height="100%">\
-
-              <source src="static/videos/carousel3.mp4" type="video/mp4">
-            </video>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
-  <!-- End video carousel -->
-
-
-
 
 
 
